@@ -23,10 +23,10 @@
             </a>
             <ul>
                 <li><a href="#" class="nav-active">Home</a></li>
-                <li><a href="#About">About Me</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Service">Projects</a></li>
-                <li><a href="#Portfolio">Resume</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="nav-button">
@@ -37,13 +37,19 @@
     </nav>
     <section id="home">
         <div class="container header-container">
+            <div class="social">
+                <a href="#" target="_blank"><i class=" fab fa-facebook " aria-hidden="true"></i></a>
+                <a href="#" target="_blank"><i class=" fab fa-instagram " aria-hidden="true"></i></a>
+                <a href="#" target="_blank"><i class=" fab fa-github " aria-hidden="true"></i></a>
+                <a href="#" target="_blank"><i class=" fab fa-youtube " aria-hidden="true"></i></a>
+            </div>
             <div class="info">
                 <h1>Hello 👋</h1>
                 <h3 id="user-detail-name"> I'm Kuldeep Tiwari</h3>
-                <p id="user-detail-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias temporibus quos
-                    nemo dolores
-                    voluptatibus accusantium eos quas ipsam quae voluptate quis beatae dicta eius, in maxime dolorum
-                    deserunt! In, veritatis.</p>
+                <p id="user-detail-intro">A passionate Node.js Back-End Developer, Dedicated to developing robust
+                    applications that interact with the Backend part of web applications. Extensive expertise in website
+                    architecture, design, and web design, and web API designs. Problem-solving mindset with a goal to
+                    optimize my application for better stability and speed. Love to work in a team.</p>
                 <div id="my-logos">
                     <a href="https://github.com/kuldeep55567" target="_blank"><img src="img/github.png" alt="Error 404"
                             id="contact-github"></a>
@@ -51,7 +57,13 @@
                             src="img/linkedin.png" alt="Error 404" id="contact-linkedin"></a>
                     <a href="#" target="_blank"><img src="img/gmail.png" alt="Error 404" id="contact-email"></a>
                 </div>
-                <a href="#contact" class="btn btn-primary">Contact me</a>
+                <div id="resume">
+                    <a href="Kuldeep-Tiwari-Resume.pdf" class="btn btn-primary" id="resume-button-1" target="_blank"><i
+                            class="fa-solid fa-eye" aria-hidden="true"></i> View
+                        Resume</a>
+                    <a href="Kuldeep-Tiwari-Resume.pdf" class="btn btn-primary" download="img/Cv.pdf"
+                        id="resume-button-2"><i class="fa fa-download" aria-hidden="true"></i> Download Resume</a>
+                </div>
             </div>
             <div class="hero-aria">
                 <div class="circle">
@@ -61,12 +73,12 @@
                     <span><i class="fa fa-box" aria-hidden="true"></i></span>
                 </div>
                 <div class="hero-img">
-                    <img src="img/businessman-working-on-laptop.png" alt="Error 404" id="home-img">
+                    <img src="img/Beauty Cam_20230302110617681_save.jpg" alt="Error 404" class="home-img">
                 </div>
             </div>
         </div>
     </section>
-    <section id="About" class="about section">
+    <section id="about" class="about section">
         <h1>Here's What I do</h1>
         <div class="container about-container">
             <div class="about-img">
@@ -78,6 +90,8 @@
                     <img src="img/html.png" alt="Error 404" class="skill-card-img">
                     <img src="img/css-3.png" alt="Error 404" class="skill-card-img">
                     <img src="img/js.png" alt="Error 404" class="skill-card-img">
+                    <img src="https://download.logo.wine/logo/Bootstrap_(front-end_framework)/Bootstrap_(front-end_framework)-Logo.wine.png"
+                        alt="Error 404" class="skill-card-img">
                     <img src="img/683-6833893_node-js-logo-png-transparent-png-removebg-preview.png" alt="Error 404">
                     <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png"
                         alt="Error 404" class="skill-card-img">
@@ -87,8 +101,6 @@
                         alt="Error 404" class="skill-card-img">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUEwABgjTSVj9mXFKriiA7XEJ3rD_M-5BGD12JBmGehXYksxfWy8ezEXDU_GFiFO_FRcY&usqp=CAU"
                         alt="Error 404" class="skill-card-img">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1024px-Amazon_Web_Services_Logo.svg.png"
-                        alt="Error 404" class="skill-card-img">
                 </div>
                 <div id="work">
                     <p><i class="fa-solid fa-bolt-lightning"></i>ㅤBuilding responsive website front end using HTML CSS
@@ -96,12 +108,30 @@
                     <p><i class="fa-solid fa-bolt-lightning"></i>ㅤCreating application backend in Node, Express</p>
                     <p><i class="fa-solid fa-bolt-lightning"></i>ㅤOptimising APIs and Data in mongodb, SQL</p>
                 </div>
-                <a href="img/Cv.pdf" class="btn btn-primary" id="resume-link-1"><i class="fa fa-download"
-                        aria-hidden="true"></i> View
-                    Resume</a>
-                <a href="img/Cv.pdf" class="btn btn-primary" download="img/Cv.pdf" id="resume-link-2"><i
-                        class="fa fa-download" aria-hidden="true"></i> Download Resume</a>
-
+            </div>
+        </div>
+        <div class="container about-container" id="skills">
+            <div class="about-des">
+                <h2>Cloud Infra-Arcitecture</h2>
+                <div class="skills-card">
+                    <img src="https://cdn.freebiesupply.com/logos/large/2x/netlify-logo-svg-vector.svg" alt="Error 404"
+                        class="skill-card-img">
+                    <img src="https://www.cyclic.sh/images/cyclic-logo.png" alt="Error 404" class="skill-card-img">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/redis-5-1175104.png" alt="Error 404"
+                        class="skill-card-img">
+                    <img src="https://avatars.githubusercontent.com/u/44036562?s=200&v=4" alt="Error 404"
+                        class="skill-card-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1024px-Amazon_Web_Services_Logo.svg.png"
+                        alt="Error 404" class="skill-card-img">
+                </div>
+                <div id="work">
+                    <p><i class="fa-solid fa-bolt-lightning"></i>ㅤExperience working on multiple cloud platforms</p>
+                    <p><i class="fa-solid fa-bolt-lightning"></i>ㅤExperience hosting and managing websites</p>
+                    <p><i class="fa-solid fa-bolt-lightning"></i>ㅤ Experience with Continuous Integration</p>
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="https://finance.advids.co/wp-content/uploads//2017/08/onedrive-sync.gif" alt="Error404">
             </div>
         </div>
     </section>
@@ -109,6 +139,17 @@
     <!-- ................Start Skills SECTION............ -->
     <section id="projects">
         <h1>Projects</h1>
+        <div class="project-intro">
+            <div>
+                <img src="https://www.webauthor.com/vault/2595/web/img_36879-2F726121-B232-D429-CE9D9519521ECC32.png"
+                    alt="error 404">
+            </div>
+            <div>
+                <p>My projects make use of a vast variety of latest technology tools. My best experience is to create
+                    NodeJS Backend Projects with optimised solutions. Below are some of my projects. Note that not all
+                    of the mentioned projects are on GitHub yet.</p>
+            </div>
+        </div>
         <div id="project1" class="project-card">
             <div id="bigimage">
                 <div class="swiper">
@@ -131,7 +172,7 @@
             <p class="project-description">International Footwear brand with products from each category in 130+
                 countries in the world</p>
             <div class="pro-stack">
-                <div class="stack-pro">
+                <div class="project-tech-stack">
                     <img src="img/html.png" alt="Error 404">
                     <img src="img/css-3.png" alt="Error 404">
                     <img src="img/js.png" alt="Error 404">
@@ -166,7 +207,7 @@
             <h2 class="tocenter">Adorma.com clone</h2>
             <p class="tocenter">Every tech gadget that makes your life Smarter and convinient is found here</p>
             <div class="pro-stack">
-                <div class="stack-pro">
+                <div class="project-tech-stack">
                     <img src="img/html.png" alt="Error 404">
                     <img src="img/css-3.png" alt="Error 404">
                     <img src="img/js.png" alt="Error 404">
@@ -177,7 +218,8 @@
                 </div>
             </div>
         </div>
-        <div id="morepro"><a href="#"><button>More Projects(Github)</button></a></div>
+        <div id="morepro"><a href="https://github.com/kuldeep55567?tab=repositories"><button>More
+                    Projects(Github)</button></a></div>
     </section>
     <!-- ................END Skills SECTION............ -->
     <h1 id="con-me">Contact Me</h1>
@@ -192,7 +234,7 @@
             <br>
             <a href=""><i class="fa-brands fa-github"></i> Github</a>
             <br>
-            <a href=""><i class="fa-solid fa-phone"></i>+91 620 316 7922</a>
+            <a href="#" id="contact-phone"><i class="fa-solid fa-phone"></i>+91 620 316 7922</a>
         </div>
         <div id="right">
             <h4>Message me</h4>
@@ -209,6 +251,9 @@
             </form>
         </div>
     </section>
+    <footer>
+        <p>©️ 2023 All rights reserved</p>
+    </footer>
     <!-- Swiper Script LINK -->
     <script src="swiper/swiper-bundle.min.js"></script>
     <!-- CUSTOM JAVASCRIPT LINK -->
