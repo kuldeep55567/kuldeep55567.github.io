@@ -918,6 +918,10 @@ nav .nav-container ul li a.nav-active {
     form {
         width: 90%;
     }
+    .project-card img{
+        width: 20px;
+        height: 50px;
+    }
 
 }
 
