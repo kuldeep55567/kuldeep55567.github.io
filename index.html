@@ -17,9 +17,9 @@
 </head>
 <body>
     <div id="topbar"></div>
-    <nav id="nav-menu" class="nav-link.home">
+    <nav id="nav-menu">
         <div class="container nav-container">
-            <a href="" class="logo">
+            <a href="#topbar" class="logo">
                 <h3>
                     < Kuldeep<span style="color:rgb(255, 0, 115)"> /></span>
                 </h3>
@@ -61,11 +61,12 @@
                     <a href="#" target="_blank"><img src="img/gmail.png" alt="Error 404" id="contact-email"></a>
                 </div>
                 <div id="resume">
-                    <a href="Kuldeep-Tiwari-Resume.pdf" class="btn btn-primary" id="resume-button-1" target="_blank"><i
-                            class="fa-solid fa-eye" aria-hidden="true"></i> View
-                        Resume</a>
-                    <a href="Kuldeep-Tiwari-Resume.pdf" class="btn btn-primary" download="img/Cv.pdf"
-                        id="resume-button-2"><i class="fa fa-download" aria-hidden="true"></i> Download Resume</a>
+                    <li id="resume-button-1">
+                        <a href="Kuldeep-Tiwari-Resume.pdf" target="_blank" id="resume-link-1" ><i class="fa-solid fa-eye"></i> View Resume</a>
+                      </li>
+                      <li id="resume-button-2">
+                        <a href="Kuldeep-Tiwari-Resume.pdf" target="_blank" id="resume-link-2" class="button" download="Kuldeep-Tiwari-Resume.pdf"><i class="fa-solid fa-download"></i> Download Resume</i></a>
+                      </li>
                 </div>
             </div>
             <div class="hero-aria">
@@ -82,7 +83,7 @@
         </div>
     </section>
     <section id="about" class="nav-link.about">
-        <h1>Here's What I do</h1>
+        <h1 id="about.about.section">Here's What I do</h1>
         <div class="container about-container">
             <div class="about-img">
                 <img src="img/businessman-working-on-laptop.png" alt="">
@@ -224,12 +225,12 @@
         <div id="morepro"><a href="https://github.com/kuldeep55567?tab=repositories"><button>More
                     Projects(Github)</button></a>
                 </div>
-                <section>
+                <section id="github">
                     <div id="github-stats">
                         <h2 class="heading">GitHub
                           <span class="span">Statistics</span>
                         </h2>
-                        <div class="container">
+                        <div class="container1">
                         
                           <div>
                             <div class="react-activity-calendar calendar">
