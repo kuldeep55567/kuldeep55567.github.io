@@ -9,6 +9,9 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
 });
+GitHubCalendar(".calendar", "kuldeep55567");
+GitHubCalendar(".calendar", "kuldeep55567", { responsive: true });
+
 // ............navbar..........
 document.querySelector('.nav-button .Open').addEventListener('click',()=>{
     document.querySelector('nav .nav-container ul').style.left = '0';

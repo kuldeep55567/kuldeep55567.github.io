@@ -950,7 +950,6 @@
      }
 
      .project-tech-stack {
-         border: 2px solid red;
          gap: 2px;
      }
      .project-tech-stack img{
@@ -969,7 +968,6 @@
 
      .deploy {
          gap: 0px;
-         border: 2px solid blue;
      }
 
      .deploy img {
