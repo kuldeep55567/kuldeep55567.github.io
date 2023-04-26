@@ -1,361 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="/img/professional-portfolio.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-    </script>
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-    <script src="https://kit.fontawesome.com/bd303dea31.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>Portfolio Website</title>
+    <!-- .............CSS LINK.......... -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- ...........FontAwesome Link........... -->
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/all.css">
+    <!-- ........Swiper slider link........ -->
+    <link rel="stylesheet" href="./Swiper/swiper-bundle.min.css">
 </head>
-
 <body>
-    <div id="topbar"></div>
-    <nav id="nav-menu">
-        <a href="#topbar" class="logo">
-            <h3>
-                < Kuldeep<span style="color:rgb(255, 0, 115)"> /></span>
-            </h3>
-        </a>
-        <ul>
-            <li><a href="#home" class="nav-link home">Home</a></li>
-            <li><a href="#about" class="nav-link about">About Me</a></li>
-            <li><a href="#skills" class="nav-link skills">Skills</a></li>
-            <li><a href="#projects" class="nav-link projects">Projects</a></li>
-            <li><a href="#contact" class="nav-link contact">Contact</a></li>
-            <li id="resume-button-1" class="nav-link resume"><a href="Kuldeep-Tiwari-Resume.pdf" target="_blank"
-                    id="resume-link-1" download="Kuldeep-Tiwari-Resume"><button class="btn_resume">
-                        Resume</button></a></li>
-        </ul>
-        <div class="nav-button">
-            <button class="Open"><i class="fa fa-bars" aria-hidden="true"></i></button>
-            <button class="Close"><i class="fa fa-close" aria-hidden="true"></i></button>
-        </div>
-    </nav>
-    <section id="home">
-        <div class="container header-container">
-            <div class="social">
-                <a href="#" target="_blank"><i class=" fab fa-facebook " aria-hidden="true"></i></a>
-                <a href="#" target="_blank"><i class=" fab fa-instagram " aria-hidden="true"></i></a>
-                <a href="#" target="_blank"><i class=" fab fa-github " aria-hidden="true"></i></a>
-                <a href="#" target="_blank"><i class=" fab fa-youtube " aria-hidden="true"></i></a>
-            </div>
-    </section>
-    <section id="about" class="about section">
-        <h1 class="heading"> <span>About</span> me </h1>
-        <h1>Hello 👋</h1>
-        <h3 id="user-detail-name"> I'm Kuldeep Tiwari</h3>
-        <p id="user-details-intro">A passionate Node.js Back-End Developer, Dedicated to developing robust
-            applications that interact with the Backend part of web applications. Extensive expertise in website
-            architecture, design, and web design, and web API designs. Problem-solving mindset with a goal to
-            optimize my application for better stability and speed. Love to work in a team. Can solve Frontend
-            with Tech stacks such as JavaScript | HTML | CSS | React</p>
-        <div id="my-logos">
-            <a href="https://github.com/kuldeep55567" target="_blank"><img src="img/github.png" alt="Error 404"
-                    id="contact-github"></a>
-            <a href="https://www.linkedin.com/in/kuldeep-tiwari-a3637923a/" target="_blank"><img src="img/linkedin.png"
-                    alt="Error 404" id="contact-linkedin"></a>
-            <a href="#" target="_blank"><img src="img/gmail.png" alt="Error 404"></a>
-        </div>
-        <div id="resume">
-            <ul>
-                <!-- <li id="resume-button-1">
-                        <a href="Kuldeep-Tiwari-Resume.pdf" target="_blank" id="resume-link-1" ><i class="fa-solid fa-eye"></i> View Resume</a>
-                      </li> -->
-                <li id="resume-button-2">
-                    <a href="Kuldeep-Tiwari-Resume.pdf" target="_blank" id="resume-link-2" class="button"
-                        download="Kuldeep-Tiwari-Resume.pdf"><i class="fa-solid fa-download"></i> Download
-                        Resume</i></a>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <div class="hero-aria">
-        <div class="circle">
-            <span><i class="fa fa-pen" aria-hidden="true"></i></span>
-            <span><i class="fa fa-code" aria-hidden="true"></i></span>
-            <span><i class="fa fa-sun" aria-hidden="true"></i></span>
-            <span><i class="fa fa-box" aria-hidden="true"></i></span>
-        </div>
-        <div class="hero-img">
-            <img src="img/Beauty Cam_20230302110617681_save.jpg" alt="Error 404" class="home-img">
-        </div>
-    </div>
-    <section id="skills">
-        <!-- <h1>About</h1> -->
-        <div class="skills-container">
-            <div class="about-img">
-                <img src="img/businessman-working-on-laptop.png" alt="">
-            </div>
-            <div class="about-des">
-                <h2>Full Stack Web Development</h2>
-                <div class="skill-container">
-                    <div class="skills-card">
-                        <img src="img/html.png" alt="Error 404" class="skills-card-img">
-                        <p class="skills-card-name">HTML</p>
+    <div class="container">
+        <div class="border">
+            <div class="wrapper">
+                <nav id="nav-menu">
+                    <a href="" class="logo"><<span>Kuldeep/></span></a>
+                    <ul>
+                        <li><a href="#home" class="nav-link home">HOME</a></li>
+                        <li><a href="#about" class="nav-link about">ABOUT</a></li>
+                        <li><a href="#skills" class="nav-link skills">SKILLS</a></li>
+                        <li><a href="#projects" class="nav-link projects">PROJECTS</a></li>
+                        <li><a href="#contact" class="nav-link contact">CONTACT</a></li>
+                        <li id="resume-button-1" class="nav-link resume"><a href="Kuldeep-Tiwari-Resume.pdf" target="_blank"
+                            id="resume-link-1" download="Kuldeep-Tiwari-Resume"><button class="btn_resume">
+                                Resume</button></a></li>
+                    </ul>
+                    <div class="phone-meno">
+                       <p class="Open"> <i class="fa fa-bars"  aria-hidden="true"></i></p>
+                        <p class="Close"> <i class="fa fa-close"  aria-hidden="true"></i></p>
                     </div>
-                    <div class="skills-card">
-                        <img src="img/css-3.png" alt="Error 404" class="skills-card-img">
-                        <p class="skills-card-name">CSS</p>
+                </nav>
+                <!-- .........START HEADE SECTION............ -->
+                <section id="home">
+                    <div class="header-social">
+                        <a href=""><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                        <a href=""><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href=""><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href=""><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                        <a href=""><i class="fab fa-linkedin" aria-hidden="true"></i></a>         
                     </div>
-                    <div class="skills-card">
-                        <img src="img/js.png" alt="Error 404" class="skills-card-img">
-                        <p class="skills-card-name">JavaScript</p>
+                    <div class="header-left">
+                        <h1>Full Stack Web Development</h1>
+                        <h3>Hi, It's Me <span id="user-detail-name">Kuldeep Tiwari</span></h3>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque laboriosam, consequuntur iure architecto officia quas dolorum commodi, quasi sit quo aliquid a quod quibusdam ea id eligendi quisquam! Delectus, harum.</p>
+                        <a href="" class="btn ">Read More</a>
                     </div>
-                    <div class="skills-card">
-                        <img src="https://download.logo.wine/logo/Bootstrap_(front-end_framework)/Bootstrap_(front-end_framework)-Logo.wine.png"
-                            alt="Error 404" class="skills-card-img">
-                        <p class="skills-card-name">Bootstrap</p>
+                    <div class="header-right">
+                        <div class="main-image-bg"></div>
+                        <img src="./img" alt="">
                     </div>
-                    <div class="skills-card">
-                        <img src="img/683-6833893_node-js-logo-png-transparent-png-removebg-preview.png" alt="Error 404"
-                            class="skills-card-img">
-                        <p class="skills-card-name">Node.js</p>
-                    </div>
-                    <div class="skills-card">
-                        <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png"
-                            alt="Error 404" class="skills-card-img">
-                        <p class="skills-card-name">Express</p>
-                    </div>
-                    <div class="skills-card">
-                        <img src="data:image/png;base64,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"
-                            alt="Error 404" class="skills-card-img">
-                        <p class="skills-card-name">mongoDB</p>
-                    </div>
-                    <div class="skills-card">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmlMhhK4G5tMBgTFsDFg4l3vdEviZ27KTDlw&usqp=CAU"
-                            alt="Error 404" class="skills-card-img">
-                        <p class="skills-card-name">Npm</p>
-                    </div>
-                    <div class="skills-card">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUEwABgjTSVj9mXFKriiA7XEJ3rD_M-5BGD12JBmGehXYksxfWy8ezEXDU_GFiFO_FRcY&usqp=CAU"
-                            alt="Error 404" class="skills-card-img">
-                        <p class="skills-card-name">MySql</p>
-                    </div>
-                </div>
-                <div id="work">
-                    <p><i class="fa-solid fa-bolt-lightning"></i>ㅤBuilding responsive website front end using HTML CSS
-                        and JavaScript</p>
-                    <p><i class="fa-solid fa-bolt-lightning"></i>ㅤCreating application backend in Node, Express</p>
-                    <p><i class="fa-solid fa-bolt-lightning"></i>ㅤOptimising APIs and Data in mongodb, SQL</p>
-                </div>
-            </div>
-            <div id="skillalthon">
-                <div class="about-des">
-                    <h2 id="user-details-intro">Cloud Infra-Arcitecture</h2>
-                    <div class="skill-container">
-                        <div class="skills-card">
-                            <img src="https://cdn.freebiesupply.com/logos/large/2x/netlify-logo-svg-vector.svg"
-                                alt="Error 404" class="skills-card-img">
-                            <p class="skills-card-name">Netlify</p>
+                </section>
+                <!-- .........END HEADER SECTION............ -->
+
+                <!--........... START ABOUT SECTION.............. -->
+                <section id="about" class="about section">
+                    <h2>About</h2>
+                    <div class="about-content">
+                        <h3 id="user-detail-name"> <span> name : </span> Kuldeep Tiwari</h3>
+                        <h3> <span> age : </span> 22 </h3>
+                        <h3 id="user-detail-intro"> <span> Tech Stack : </span> JavaScript | HTML | CSS | NodeJs</h3>
+        
+                        <h3> <span> language : </span> Hindi/English </h3>
+                        <div class="about-left">
+                            <img src="img/Beauty Cam_20230302110617681_save.jpg" alt="error404">
                         </div>
-                        <div class="skills-card">
-                            <img src="https://www.cyclic.sh/images/cyclic-logo.png" alt="Error 404"
-                                class="skills-card-img">
-                            <p class="skills-card-name">Cyclic</p>
-                        </div>
-                        <div class="skills-card">
-                            <img src="https://cdn.iconscout.com/icon/free/png-256/redis-5-1175104.png" alt="Error 404"
-                                class="skills-card-img">
-                            <p class="skills-card-name">Redis</p>
-                        </div>
-                        <div class="skills-card">
-                            <img src="https://avatars.githubusercontent.com/u/44036562?s=200&v=4" alt="Error 404"
-                                class="skills-card-img">
-                            <p class="skills-card-name">Git Actions</p>
-                        </div>
-                        <div class="skills-card">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1024px-Amazon_Web_Services_Logo.svg.png"
-                                alt="Error 404" class="skills-card-img">
-                            <p class="skills-card-name">AWS</p>
+                        <div class="about-right">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores libero nobis neque eveniet, doloremque impedit facere natus debitis, quasi in ducimus recusandae illo sunt odio ex accusantium porro magni doloribus sapiente magnam nemo eaque soluta aliquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, ipsam. </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed corrupti et dolore doloribus, temporibus ipsum nobis labore error odio enim commodi quidem, in, quasi saepe! Illo? Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, itaque. </p>
+                            <span>See More</span>
+                            <span id="resume-button-2">
+                                <a href="Kuldeep-Tiwari-Resume.pdf" target="_blank" id="resume-link-2"
+                                    download="Kuldeep-Tiwari-Resume"><button class="btn"> Download Resume
+                                        <i class="fas fa-download"></i> </button></a>
+                            </span>
+                            <a id="contact-linkedin" href="https://www.linkedin.com/in/kuldeep-tiwari-a3637923a/"
+                            target="_blank"><button class="btn">LinkedIn </button></a>
+                        <a id="contact-github" href="https://github.com/kuldeep55567" target="_blank"><button
+                                class="btn">GitHub</button></a>
                         </div>
                     </div>
-                    <div id="work">
-                        <p><i class="fa-solid fa-bolt-lightning"></i>ㅤExperience working on multiple cloud platforms</p>
-                        <p><i class="fa-solid fa-bolt-lightning"></i>ㅤExperience hosting and managing websites</p>
-                        <p><i class="fa-solid fa-bolt-lightning"></i>ㅤ Experience with Continuous Integration</p>
-                    </div>
-                </div>
-                <div class="about-img">
-                    <img src="https://finance.advids.co/wp-content/uploads//2017/08/onedrive-sync.gif" alt="Error404">
-                </div>
-            </div>
-    </section>
-    <!-- ................END ABOUT SECTION............ -->
-    <!-- ................Start Skills SECTION............ -->
-    <section id="projects">
-        <h1>Projects</h1>
-        <div class="project-intro">
-            <div>
-                <img src="https://www.webauthor.com/vault/2595/web/img_36879-2F726121-B232-D429-CE9D9519521ECC32.png"
-                    alt="error 404">
-            </div>
-            <div>
-                <p>My projects make use of a vast variety of latest technology tools. My best experience is to create
-                    NodeJS Backend Projects with optimised solutions. Below are some of my projects. Note that not all
-                    of the mentioned projects are on GitHub yet.</p>
-            </div>
-        </div>
-        <div id="project1" class="project-card">
-            <div id="bigimage">
-                <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide"><img src="img/clark-main.png" alt=""></div>
-                        <div class="swiper-slide"><img src="img/clark-login.png"></div>
-                        <div class="swiper-slide"><img src="img/clark-product.png"></div>
-                        <div class="swiper-slide"><img src="img/Screenshot 2023-03-16 125611.png"></div>
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-            </div>
-            <h2 class="project-title">Clarsusa.com clone</h2>
-            <p class="project-description">International Footwear brand with products from each category in 130+
-                countries in the world</p>
-            <div class="pro-stack">
-                <div class="project-tech-stack">
-                    <img src="img/html.png" alt="Error 404">
-                    <img src="img/css-3.png" alt="Error 404">
-                    <img src="img/js.png" alt="Error 404">
-                    <img src="img/683-6833893_node-js-logo-png-transparent-png-removebg-preview.png" alt="Error 404">
-                    <img src="data:image/png;base64,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"
-                        alt="Error 404">
-                </div>
-                <div class="deploy">
-                    <a href="https://github.com/kuldeep55567/satisfying-bee-4021" class="project-github-link"><img
-                            src="img/github.png" alt="Error 404"></a>
-                    <a href="https://frolicking-axolotl-b0d1a6.netlify.app/index.html"
-                        class="project-deployed-link"><button>Live</button></a>
-                </div>
-            </div>
-        </div>
-        <div id="project2" class="project-card">
-            <div id="bigimage">
-                <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide"><img src="img/bp-main.png" alt=""></div>
-                        <div class="swiper-slide"><img src="img/bp-login.png"></div>
-                        <div class="swiper-slide"><img src="img/bp-pro.png"></div>
-                        <div class="swiper-slide"><img src="img/Screenshot 2023-03-16 125817.png"></div>
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-            </div>
-            <h2 class="project-title">Adorma.com clone</h2>
-            <p class="project-description">Every tech gadget that makes your life Smarter and convinient is found here
-            </p>
-            <div class="pro-stack">
-                <div class="project-tech-stack">
-                    <img src="img/html.png" alt="Error 404">
-                    <img src="img/css-3.png" alt="Error 404">
-                    <img src="img/js.png" alt="Error 404">
-                </div>
-                <div class="deploy">
-                    <a href="https://github.com/kuldeep55567/whole_lace-7572" class="project-github-link"><img
-                            src="img/github.png" alt="Error 404"></a>
-                    <a href="https://amazing-selkie-0b207f.netlify.app/"
-                        class="project-deployed-link"><button>Live</button></a>
-                </div>
-            </div>
-        </div>
-        <div id="morepro"><a href="https://github.com/kuldeep55567?tab=repositories"><button>More
-                    Projects(Github)</button></a>
-        </div>
-    </section>
-    <section id="github">
-        <div id="github-stats">
-            <h2 class="heading">GitHub
-                <span class="span">Statistics</span>
-            </h2>
-            <div class="container1">
+                </section>
+                <!--........... END ABOUT SECTION.............. -->
 
-                <div>
-                    <div class="react-activity-calendar calendar">
+
+                <!--........... Start skills SECTION.............. -->
+                <section id="skills">
+                    <h2 class="section-title"> Teck Stack</h2>
+                    <div class="skills-container">
+                        <div class="skills-card"><img class="skills-card-img" src="img/html.png">
+                            <h1 class="skills-card-name">HTML</h1>
+                        </div>
+
+                        <div class="skills-card"><img class="skills-card-img" src="img/css-3.png">
+                            <h1 class="skills-card-name">CSS</h1>
+                        </div>
+            
+                        <div class="skills-card"><img class="skills-card-img" src="img/js.png">
+                            <h1 class="skills-card-name">JavaScript</h1>
+                        </div>
+            
+                        <div class="skills-card"><img class="skills-card-img" src="img/express.png">
+                            <h1 class="skills-card-name">Express</h1>
+                        </div>
+            
+                        <div class="skills-card"><img class="skills-card-img" src="img/git.png">
+                            <h1 class="skills-card-name">Git</h1>
+                        </div>
+                        <div class="skills-card"><img class="skills-card-img" src="img/mongodb.png">
+                            <h1 class="skills-card-name">MongoDb</h1>
+                        </div>
+            
+                        <div class="skills-card"><img class="skills-card-img" src="img/mongoose.png">
+                            <h1 class="skills-card-name">Mongoose</h1>
+                        </div>
+            
+                        <div class="skills-card"><img class="skills-card-img" src="img/683-6833893_node-js-logo-png-transparent-png-removebg-preview.png">
+                            <h1 class="skills-card-name">NodeJs</h1>
+                        </div>
+            
+                        <div class="skills-card"><img class="skills-card-img" src="img/sql.jpg">
+                            <h1 class="skills-card-name">Sql</h1>
+                        </div>
+            
                     </div>
-                    <br />
-                    <div style="" align="center" class="stats">
-                        <a href="https://github.com/vaibhzz101">
-                            <img id="github-streak-stats"
-                                src="https://github-readme-streak-stats.herokuapp.com/?user=kuldeep55567&theme=black-ice&hide_border=true&stroke=0000&background=060A0CD0"
-                                alt="" />
-                            <br />
-                            <br />
+                </section>
+                <!--........... END skills SECTION.............. -->
 
-                            <img id="github-stats-card"
-                                src="https://github-readme-stats.vercel.app/api?username=kuldeep55567&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=0D1117" />
-
-                            <br />
-                            <br />
-
-                            <img src="https://github-readme-stats.vercel.app/api/top-langs?username=kuldeep55567&show_icons=true&locale=en&layout=compact&theme=react&hide_border=true&bg_color=0D1117"
-                                id="github-top-langs" />
-                        </a>
+                <section class="education" id="education">
+                    <h1 class="heading"> my <span>education</span> </h1>
+                    <div class="box-container"> 
+                        <div class="box">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>2023</span>
+                            <h3>Full Stack Web Development</h3>
+                            <p>Masai School</p>
+                        </div>
+                        <div class="box">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>2020-Present</span>
+                            <h3>Bachlors Of Arts</h3>
+                            <p>IGNOU</p>
+                        </div>      
+                        <div class="box">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>2020</span>
+                            <h3>12th </h3>
+                            <p>CBSE</p>
+                        </div>
                     </div>
-                </div>
+                </section>
+                <!--........... Start projects SECTION.............. -->
+                <section id="projects">
+                    <h1 class="heading"> My <span>Projects</span> </h1>         
+                    <div id="project-box">
+                        <div class="project-card">
+                            <div class="image-div-project">
+                                <img src="./img/clark-main.png" alt="">
+                            </div>
+                            <div class="text-div-project">
+                                <h1 class="project-title">Clarks Originals</h1>
+                                <h3 class="project-description"> A Full Stack project providing Rest Api for buying shoes all across the globe. The Api can perform all the crud operation with customer validation on every step.
+                                    The project was made by me in a span of 4 days </h3>
+                                <h3 class="project-tech-stack" style="margin-top: 10px;">Teck Stack : HTML | CSS | JavaScript | Node.js | Express | MongoDb </h3>
+                                <a class="project-github-link" href="https://github.com/kuldeep55567/satisfying-bee-4021"
+                                    target="_blank"><button class="bt">GitHub</button></a>
+                                <a class="project-deployed-link" href="https://frolicking-axolotl-b0d1a6.netlify.app"
+                                    target="_blank"><button class="bt">Live</button></a>
+            
+                            </div>
+                        </div>
+            
+                        <div class="project-card">
+                            <div class="image-div-project">
+                                <img src="img/bp-main.png" alt="">
+                            </div>
+                            <div class="text-div-project">
+                                <h1 class="project-title">Big Pocket</h1>
+                                <h3 class="project-description">An Ecommerce Website selling all smart aand innovative tech gadgets for making life easier and smarter.
+                                    This Project was made by a team of 4 members in a span of 5 days.
+                                </h3>
+                                <h3 class="project-tech-stack" style="margin-top: 10px;">Teck Stack : HTML | CSS | JavaScript | JSON | LocalStorage</h3>
+                                <a class="project-github-link" href="https://github.com/Sonu598/festive-lake-9492.git"
+                                    target="_blank"><button class="bt">GitHub</button></a>
+                                <a class="project-deployed-link" href="https://preeminent-twilight-7f6b32.netlify.app"
+                                    target="_blank"><button class="bt">Live</button></a>
+                            </div>
+                        </div>
+            
+                        <div class="project-card">
+                            <div class="image-div-project">
+                                <img src="images/Screenshot (154).png" alt="">
+                            </div>
+                            <div class="text-div-project">
+                                <h1 class="project-title">Apna Bazar</h1>
+                                <h3 class="project-description">Geekbuying is an online retail store that specializes in selling
+                                    consumer electronics, gadgets, and accessories. The project was made in a span of 4 days.</h3>
+                                <h3 class="project-tech-stack" style="margin-top: 10px;">Teck Stack : HTML | CSS | JavaScript
+                                </h3>
+                                <a class="project-github-link" href="https://github.com/shubhamprakash911/spiteful-celery-7979"
+                                    target="_blank"><button class="bt">GitHub</button></a>
+                                <a class="project-deployed-link" href="https://iridescent-torte-1e657d.netlify.app/"
+                                    target="_blank"><button class="bt">Live</button></a>
+                            </div>
+                        </div>
+            
+            
+                        <div class="project-card">
+                            <div class="image-div-project">
+                                <img src="images/Screenshot (155).png" alt="">
+                            </div>
+                            <div class="text-div-project">
+                                <h1 class="project-title">Time Frame</h1>
+                                <h3 class="project-description">A time tracker with additional workforce management features that
+                                    will help you develop a high-performing team that smashes goals every time. The project was made
+                                    in a span of 4 days.There were a team of four members</h3>
+                                <h3 class="project-tech-stack" style="margin-top: 10px;">Teck Stack : HTML | CSS | JavaScript |
+                                    Express | MongoDb | Redis </h3>
+                                <a class="project-github-link" href="https://github.com/Smoke221/truculent-trains-1017"
+                                    target="_blank"><button class="bt">GitHub</button></a>
+                                <a class="project-deployed-link" href="https://storied-paprenjak-8f2e60.netlify.app/"
+                                    target="_blank"><button class="bt">Live</button></a>
+                            </div>
+                        </div>
+                    </div>         
+                </section>
+                <!--........... END projects SECTION.............. -->
+                <section id="github">
+                    <div id="github-stats">
+                        <h2 class="heading">GitHub
+                            <span class="span">Statistics</span>
+                        </h2>
+                        <div class="container1">
+            
+                            <div>
+                                <div class="react-activity-calendar calendar">
+                                </div>
+                                <br />
+                                <div  align="center" class="stats">
+                                    <a href="https://github.com/vaibhzz101">
+                                        <img id="github-streak-stats"
+                                            src="https://github-readme-streak-stats.herokuapp.com/?user=kuldeep55567&theme=black-ice&hide_border=true&stroke=0000&background=060A0CD0"
+                                            alt="" />
+                                        <br />
+                                        <br />
+            
+                                        <img id="github-stats-card"
+                                            src="https://github-readme-stats.vercel.app/api?username=kuldeep55567&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=0D1117" />
+            
+                                        <br />
+                                        <br />
+            
+                                        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=kuldeep55567&show_icons=true&locale=en&layout=compact&theme=react&hide_border=true&bg_color=0D1117"
+                                            id="github-top-langs" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ...........Star contact SECTION............. -->
+                <section id="contact">
+                    <h1 id="con-me" class="heading">Contact Me</h1>
+                    <div id="left">
+                        <h4>Get in Touch</h4>
+                        <p>Got a project ? Reach out and let's make something exciting. Big or Small. Mobile or Web. Backend or
+                            Frontend</p>
+                        <div id="a" class="info">
+                            <h3 id="contact-email"> <i class="fas fa-envelope"></i>kuldeept5567@gmail.com</h3>
+                            <br>
+                            <a href="https://www.linkedin.com/in/kuldeep-tiwari-a3637923a/" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i>
+                                Linkedin</a>
+                            <br>
+                            <a href="https://github.com/kuldeep55567" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+                            <br>
+                            <a href="#" id="contact-phone"><i class="fa-solid fa-phone"></i> +91 620 316 7922</a>
+                        </div>
+                    </div>
+                    <div id="right">
+                        <h4>Message me</h4>
+                        <form action="" class="contact-form">
+                            <div id="flexed">
+                                <input type="text" placeholder="Name">
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <input type="text" placeholder="Subject" id="subject">
+                            <br>
+                            <input type="text" id="message-area" placeholder="Message...">
+                            <br>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </section>
+                <!-- ...........END contact SECTION............. --> 
+                <!-- ...........Start Footer SECTION............. --> 
+                <footer>
+                    <ul>
+                        <li><a href="#nav-menu" >HOME</a></li>
+                        <li><a href="#about" >ABOUT</a></li>
+                        <li><a href="#skills" >SKILLS</a></li>
+                        <li><a href="#projects" >PROJECTS</a></li>
+                        <li><a href="#contact" >CONTACT</a></li>
+                    </ul>
+                </footer>
+                <!-- ...........END Footer SECTION............. --> 
+                <a class="Scroll-up" href="#Nav">Scroll Up</a>
             </div>
         </div>
-
-    </section>
-    <!-- ................END Skills SECTION............ -->
-    <section id="contact">
-        <h1 id="con-me" class="heading">Contact Me</h1>
-        <div id="left">
-            <h4>Get in Touch</h4>
-            <p>Got a project ? Reach out and let's make something exciting. Big or Small. Mobile or Web. Backend or
-                Frontend</p>
-            <div id="a" class="info">
-                <h3 id="contact-email"> <i class="fas fa-envelope"></i>kuldeept5567@gmail.com</h3>
-                <br>
-                <a href="https://www.linkedin.com/in/kuldeep-tiwari-a3637923a/" target="_blank"><i
-                        class="fa-brands fa-linkedin"></i>
-                    Linkedin</a>
-                <br>
-                <a href="https://github.com/kuldeep55567" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
-                <br>
-                <a href="#" id="contact-phone"><i class="fa-solid fa-phone"></i> +91 620 316 7922</a>
-            </div>
-        </div>
-        <div id="right">
-            <h4>Message me</h4>
-            <form action="" class="contact-form">
-                <div id="flexed">
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
-                </div>
-                <input type="text" placeholder="Subject" id="subject">
-                <br>
-                <input type="text" id="message-area" placeholder="Message...">
-                <br>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
-    <footer>
-        <p>©️ 2023 All rights reserved</p>
-    </footer>
-    <!-- Swiper Script LINK -->
-    <script src="swiper/swiper-bundle.min.js"></script>
-    <!-- CUSTOM JAVASCRIPT LINK -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="index.js"></script>
+    </div>  
+    <!-- ............Swiper js........ -->
+    <script src="./Swiper/swiper-bundle.min.js"></script>
+    <!-- ..........CUSTOM JS LINK.......... -->
+    <script src="./Script.js"></script>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 </body>
-
 </html>
