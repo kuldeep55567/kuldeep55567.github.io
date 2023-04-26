@@ -125,11 +125,6 @@ img{
     display: block;
     width: 100%;
 }
-h1{
-    font-size: 50px;
-    color: var(--color-primary-plush);
-    margin-bottom: 1rem;
-}
 .header-left, 
 .header-social{
     padding-top: 5rem;
@@ -146,19 +141,40 @@ h1{
 .header-social a i:hover{
     color: var(--color-danger);
 }
- h3{
-    font-size: 24px;
-    margin-bottom: .5rem;
+.header-left h1{
+    font-size: 40px;
+    color: var(--color-primary-plush);
+}
+.header-left h3{
+    font-size: 30px;
+    color: var(--color-primary);
+}
+#user-detail-name{
+    font-size: 30px;
     color: var(--color-braun);
 }
 .header-left p{
     color: var(--color-primary);
     margin-bottom: 2rem;
+    font-size: 20px;
 }
 .header-right{
     position: relative;
     border-radius: 40%;
     overflow: hidden;    
+}
+#hiiAbout{
+    font-size: 50px;
+    color: var(--color-primary-plush);
+    text-align: center;
+}
+.heading{
+    font-size: 30px;
+    color: var(--color-primary);
+}
+#edu{
+    font-size: 30px;
+    color: var(--color-braun);
 }
 .main-image-bg{
     position: absolute;
@@ -201,11 +217,15 @@ h1{
 
 
 /* ..............Start about section................ */
- h2{
-    font-size: 42px;
-    color: var(--color-braun);
-    padding: 1rem 0;
-    text-align: center;
+#about{
+    margin-top: 100px;
+}
+#home p{
+    line-height: 40px;
+    margin-top: 50px;
+}
+#home h3{
+    margin-top: 20px;
 }
 .about-content{
     display: grid;
@@ -215,6 +235,7 @@ h1{
 }
 .about-left{
     padding: 20px;
+    text-align: center;
 }
 .about-right{
     padding: 30px;
@@ -394,104 +415,6 @@ h1{
 
 
 /* ..............Start Testimonial  section................ */
-#Testimonial{
-    width: 70% !important;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.testimonial{
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-    border-radius: 2rem;
-    padding: 30px;      
-}
-.profile-aria{
-    height: 4rem;
-    width: 4rem;
-    overflow: hidden;
-    border-radius: 50%;
-    border-bottom: 3px solid var(--color-on-white);
-    margin: 0 auto;
-
-}
-.testimonial small{
-    text-align: center;
-    font-size: .9rem;
-    color: var(--color-light);
-    display: block;
-}
-h5{
-    text-align: center;
-}
-.testimonial:nth-child(1){
-    background: var(--color-primary);
-    color: var(--color-white);
-}
-.testimonial:nth-child(2){
-    background: var(--color-primary-plush);
-    color: var(--color-white);
-}
-.testimonial:nth-child(3){
-    background: var(--color-braun);
-    color: var(--color-white);
-}
-.testimonial:nth-child(4){
-    background: var(--color-danger);
-    color: var(--color-white);
-}
-.testimonial:nth-child(5){
-    background: var(--color-black);
-    color: var(--color-white);
-}
-/* ..............END  Testimonial section................ */
-
-/* ..............Start  contact section................ */
-.contact-content{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: 35%;
-    margin: 0 auto;    
-}
-.contact-box{
-    text-align: center;
-    padding: 20px;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-.contact-box:nth-child(2){
-    background: var(--color-braun);
-    color: var(--color-on-white);
-    border: 1px solid var(--color-braun);
-}
-.contact-box:nth-child(2):hover{
-    color: var(--color-braun);
-    background: none;
-}
-.contact-box:nth-child(1){
-    background: var(--color-black);
-    color: var(--color-on-white);
-    border: 1px solid var(--color-black);
-}
-.contact-box:nth-child(1):hover{
-    color: var(--color-black);
-    background: none;
-}
-.contact-box small{
-    font-size: .8rem;
-}
-.contact-box a i{
-    font-size: 24px;  
-    color: var(--color-on-white);  
-}
-.contact-box:hover a i{
-    color: var(--color-braun);    
-}
-/* ..............END  contact section................ */
 
 
 /* ..............Start  Footer section................ */
@@ -743,78 +666,7 @@ nav .phone-meno{
         box-shadow: 0 0 .8rem var(--color-primary);
     }    
 }
-.education .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding:1rem 0;
-    padding-left: 3rem;
-}
 
-.education .box-container .box{
-    width:27rem;
-    margin:4rem 1rem;
-    padding-left: 4rem;
-    border-left: .2rem solid #fff;
-    position: relative;
-}
-
-.education .box-container .box span{
-    font-size: 1.3rem;
-    background: #00004B;
-    color:var(--color-braun);
-    border-radius: 5rem;
-    padding:.5rem 2.5rem;
-}
-
-.education .box-container .box h3{
-    font-size: 2rem;
-    color:var(--color-braun);
-    padding-top: 1.5rem;
-}
-
-.education .box-container .box p{
-    font-size: 1.4rem;
-    color:var(--color-primary-plush);
-    padding: 1rem 0;
-}
-
-.education .box-container .box i{
-    position: absolute;
-    top:-1.5rem; left:-2.5rem;
-    height:5rem;
-    width: 5rem;
-    border-radius: 50%;
-    line-height: 5rem;
-    text-align: center;
-    font-size: 2rem;
-    color:var(--color-primary);
-    background:var(--red);
-}
- .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding:2rem 0;
-}
- .box-container .box{
-    height: 20rem;
-    width:26rem;
-    border-radius: 1rem;
-    margin:2rem;
-    overflow: hidden;
-    cursor: pointer;
-}
-.box-container .box img{
-    height:100%;
-    width:100%;
-    object-fit: cover;
-}
- .box-container .box:hover img{
-    transform: scale(1.2);
-}
 #contact {
     display: flex;
     margin: auto;
@@ -896,7 +748,92 @@ input {
     width:30%;
 }
 .skills-container{
-    border: 2px solid red;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    margin: auto;
+}
+.skills-card{
+     text-align: center;
+     margin-top: 50px;
+}
+.skills-card img{
+    display: inline;
+
+}
+.box{
+    margin-top: 50px;
+}
+
+.box span{
+font-size: 25px;
+color: var(--color-primary-plush);
+font-weight: 700;
+}
+.box p{
+color: var(--color-braun);
+font-size: 25px;
+}
+.box h3{
+    color: var(--color-primary);
+    font-size: 25px;
+}
+#contact-linkedin button{
+    width: 230px;
+    margin-top: 10px;
+}
+#contact-github button{
+    width: 230px;
+    margin-top: 10px;
+}
+.section-title{
+font-size: 50px;
+color: var(--color-primary-plush);
+text-align: center;
+margin-top: 100px;
+}
+.heading{
+    font-size: 50px;
+    color: var(--color-primary);
+    text-align: center;
+    margin-top: 100px;
+}
+.heading span{
+    font-size: 50px;
+    color: var(--color-braun);
+}
+.project-title{
+    font-size: 30px;
+    color: var(--color-primary);
+    text-align: center;
+}
+.project-description{
+    font-size: 25px;
+    color: var(--color-primary-plush);
+}
+.project-tech-stack{
+    font-size: 25px;
+    color: var(--color-braun);
+}
+.project-github-link button,.project-deployed-link button{
+font-size: 25px;
+border: 1px solid var(--color-braun);
+padding-inline:20px ;
+border-radius: 10px;
+text-align: center;
+margin: auto;
+font-weight: 600;
+background-color: var(--color-braun);
+color: var(--color-light)
+}
+.project-github-link button:hover,.project-deployed-link button:hover{
+    cursor: pointer;
+}
+.bt i{
+font-size: 25px;
+}
+.project-card{
+    margin-top: 100px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 30px;
+    border-radius: 20px;
 }
