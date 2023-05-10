@@ -93,14 +93,16 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-#cortop{
+
+#cortop {
     position: sticky;
-   top:-40px;
+    top: -40px;
     background-color: rgb(248, 244, 244);
     margin: -40px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     padding: 10px;
 }
+
 nav ul {
     display: flex;
     gap: 40px;
@@ -143,7 +145,7 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: 3% auto 38%;
     gap: 2rem;
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
 img {
@@ -263,7 +265,7 @@ img {
 
 /* ..............Start about section................ */
 #about {
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 #home p {
@@ -332,6 +334,10 @@ img {
 
 
 /* ..............Start skills section................ */
+#skills {
+    padding-top: 40px;
+}
+
 .skill-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -376,6 +382,7 @@ img {
     gap: .5rem;
     color: var(--color-black);
 }
+
 /* ..............Start  Footer section................ */
 footer {
     padding-top: 4rem;
@@ -559,6 +566,10 @@ input {
     color: var(--color-braun);
 }
 
+#projects {
+    padding-top: 20px;
+}
+
 .project-title {
     font-size: 40px;
     text-align: center;
@@ -626,7 +637,8 @@ input {
 button:hover {
     cursor: pointer;
 }
-#contact-email{
+
+#contact-email {
     color: var(--color-primary);
     font-weight: 470;
 }
@@ -649,6 +661,7 @@ button:hover {
         background-color: var(--color-light);
         border: none;
     }
+
     nav ul {
         position: absolute;
         flex-direction: column;
@@ -663,6 +676,7 @@ button:hover {
         z-index: 10;
 
     }
+
     .nav-link home {
         border: none;
         color: var(--color-primary-plush);
@@ -709,8 +723,8 @@ button:hover {
     }
 
     .main-image-bg {
-         left: 0; 
-         right: 0; 
+        left: 0;
+        right: 0;
         margin: auto;
     }
 
@@ -779,7 +793,7 @@ button:hover {
 
     /* .......Scroll up..... */
     .Scroll-up {
-        right:40rem;
+        right: 40rem;
         bottom: 10rem;
     }
 
@@ -788,16 +802,19 @@ button:hover {
 
 /* Max-Width(600px) */
 @media (max-width:600px) {
-.box{
-    margin-left: 50px;
-}
-#cortop{
-    padding-inline: 40px;
-   padding-top: 20px;
-}
+    .box {
+        margin-left: 50px;
+    }
+
+    #cortop {
+        padding-inline: 40px;
+        padding-top: 20px;
+    }
+
     .wrapper {
         height: 90vh;
     }
+
     /* .......head...... */
     .header-right img {
         width: 100%;
@@ -832,14 +849,15 @@ button:hover {
     }
 
     /* ..Skill. */
-    
+
     /* cotnact */
     .contact-content {
         width: 100%;
         gap: 1rem;
     }
-    .skills-container{
-        grid-template-columns: repeat(2,1fr);
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -861,7 +879,8 @@ button:hover {
         box-shadow: 0 0 .8rem var(--color-primary);
     }
 }
-.pbtn{
+
+.pbtn {
     text-align: center;
     margin-top: 40px;
 }
