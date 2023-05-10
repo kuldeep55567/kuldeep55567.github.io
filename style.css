@@ -848,3 +848,7 @@ button:hover {
         box-shadow: 0 0 .8rem var(--color-primary);
     }
 }
+.pbtn{
+    text-align: center;
+    margin-top: 40px;
+}
