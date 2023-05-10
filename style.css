@@ -93,7 +93,14 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-
+#cortop{
+    position: sticky;
+   top:-40px;
+    background-color: rgb(248, 244, 244);
+    margin: -40px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding: 10px;
+}
 nav ul {
     display: flex;
     gap: 40px;
@@ -136,6 +143,7 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: 3% auto 38%;
     gap: 2rem;
+    margin-top: 50px;
 }
 
 img {
@@ -599,7 +607,7 @@ input {
     font-size: 19px;
     font-weight: 600;
     border: none;
-    background-color: var(--color-on-white);
+    background-color: rgb(248, 244, 244);
 }
 
 #resume-button-1 button:hover {
@@ -692,6 +700,7 @@ button:hover {
         grid-row: 1;
         overflow: visible;
         margin: 0 auto;
+        margin-top: 100px;
     }
 
     .header-right img {
@@ -700,8 +709,8 @@ button:hover {
     }
 
     .main-image-bg {
-        left: 0;
-        right: 0;
+         left: 0; 
+         right: 0; 
         margin: auto;
     }
 
@@ -781,6 +790,10 @@ button:hover {
 @media (max-width:600px) {
 .box{
     margin-left: 50px;
+}
+#cortop{
+    padding-inline: 40px;
+   padding-top: 20px;
 }
     .wrapper {
         height: 90vh;
