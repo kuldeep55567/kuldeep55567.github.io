@@ -859,12 +859,16 @@ button:hover {
     .header-right {
         padding-top: 2rem;
     }
-
+    .project-card h1{
+        font-size: 25px;
+    }
+    .project-card h3{
+        font-size: 20px;
+    }
     .wrapper {
         padding: 20px;
     }
 #left{
-    border: 2px solid red;
     padding: 10px;
 }
     h1 {
