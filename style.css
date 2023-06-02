@@ -195,7 +195,7 @@ img {
 }
 
 .header-right {
-    position: relative;
+    /* position: relative;  */
     border-radius: 40%;
     overflow: hidden;
 }
@@ -251,7 +251,7 @@ img {
 }
 
 .header-right img {
-    position: relative;
+    /* position: relative; */
 }
 
 .header-left .btn:hover {
@@ -421,7 +421,7 @@ nav .phone-meno {
 #contact {
     display: flex;
     margin: auto;
-
+    padding: 20px;
 }
 
 #flexed {
@@ -674,7 +674,6 @@ button:hover {
         border-radius: .5rem;
         left: 9999px;
         z-index: 10;
-
     }
 
     .nav-link home {
@@ -815,6 +814,37 @@ button:hover {
         height: 90vh;
     }
 
+    #contact {
+        flex-direction: column;
+    }
+
+    #left {
+        width: 100%;
+        margin: auto;
+        text-align: left;
+    }
+
+    #right>h4 {
+        text-align: center;
+        width: 250px;
+    }
+
+    #flexed {
+        flex-direction: column;
+    }
+
+    #right input {
+        width: 250px;
+    }
+
+    #right button {
+        width: 250px;
+    }
+
+    nav ul {
+        width: 84%;
+    }
+
     /* .......head...... */
     .header-right img {
         width: 100%;
@@ -833,7 +863,10 @@ button:hover {
     .wrapper {
         padding: 20px;
     }
-
+#left{
+    border: 2px solid red;
+    padding: 10px;
+}
     h1 {
         line-height: 50px;
         margin-top: .5rem;

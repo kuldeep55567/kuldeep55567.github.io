@@ -14,5 +14,4 @@ document.querySelector('.Close').addEventListener('click',()=>{
     document.querySelector('.Open').style.display='block'
     document.querySelector('nav ul').style.left='-9999px'
 })
-
 GitHubCalendar(".calendar", "kuldeep55567", { responsive: true });

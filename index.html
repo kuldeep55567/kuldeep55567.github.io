@@ -8,6 +8,7 @@
     <title>Portfolio Website</title>
     <!-- .............CSS LINK.......... -->
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- ...........FontAwesome Link........... -->
     <script src="https://kit.fontawesome.com/bd303dea31.js" crossorigin="anonymous"></script>
     <!-- ........Swiper slider link........ -->
@@ -19,27 +20,27 @@
         <div class="border">
             <div class="wrapper">
                 <div id="cortop">
-                <nav id="nav-menu">
-                    <a href="" class="logo">
-                        <<span>Kuldeep/></span>
-                    </a>
-                    <ul>
-                        <li><a href="#home" class="nav-link home">HOME</a></li>
-                        <li><a href="#about" class="nav-link about">ABOUT</a></li>
-                        <li><a href="#skills" class="nav-link skills">SKILLS</a></li>
-                        <li><a href="#projects" class="nav-link projects">PROJECTS</a></li>
-                        <li><a href="#contact" class="nav-link contact">CONTACT</a></li>
-                        <li id="resume-button-1" class="nav-link resume"><a href="Kuldeep-Tiwari-Resume.pdf"
-                                target="_blank" id="resume-link-1" download="Kuldeep-Tiwari-Resume"><button
-                                    class="btn_resume">
-                                    RESUME <i class="fas fa-download"></i></button></a></li>
-                    </ul>
-                    <div class="phone-meno">
-                        <p class="Open"> <i class="fa fa-bars" aria-hidden="true"></i></p>
-                        <p class="Close"> <i class="fa fa-close" aria-hidden="true"></i></p>
-                    </div>
-                </nav>
-            </div>
+                    <nav id="nav-menu">
+                        <a href="#" class="logo">
+                            <<span>Kuldeep/></span>
+                        </a>
+                        <ul>
+                            <li><a href="#home" class="nav-link home">HOME</a></li>
+                            <li><a href="#about" class="nav-link about">ABOUT</a></li>
+                            <li><a href="#skills" class="nav-link skills">SKILLS</a></li>
+                            <li><a href="#projects" class="nav-link projects">PROJECTS</a></li>
+                            <li><a href="#contact" class="nav-link contact">CONTACT</a></li>
+                            <li id="resume-button-1" class="nav-link resume"><a href="Kuldeep-Tiwari-Resume.pdf"
+                                    target="_blank" id="resume-link-1" download="Kuldeep-Tiwari-Resume"><button
+                                        class="btn_resume">
+                                        RESUME <i class="fas fa-download"></i></button></a></li>
+                        </ul>
+                        <div class="phone-meno">
+                            <p class="Open"> <i class="fa fa-bars" aria-hidden="true"></i></p>
+                            <p class="Close"> <i class="fa fa-close" aria-hidden="true"></i></p>
+                        </div>
+                    </nav>
+                </div>
                 <!-- .........START HEADER SECTION............ -->
                 <section id="home">
                     <div class="header-social">
@@ -61,8 +62,8 @@
                         </p>
                     </div>
                     <div class="header-right">
-                        <div class="main-image-bg"></div>
-                        <img class="home-img" src="./img/WhatsApp_Image_2023-04-22_at_17.56.15-removebg-preview.png"
+                        <div class="main-image-bg" style="display: none;"></div>
+                        <img  data-aos="fade-up" class="home-img" src="./img/WhatsApp_Image_2023-04-22_at_17.56.15-removebg-preview.png"
                             alt="">
                     </div>
                 </section>
@@ -73,7 +74,7 @@
                     <h2 id="hiiAbout">About</h2>
                     <div class="about-content">
                         <div class="about-left">
-                            <img class="home-img" src="img/businessman-working-on-laptop.png" alt="error404">
+                            <img class="home-img" src="img/businessman-working-on-laptop.png" alt="error404" data-aos="fade-up">
                             <br>
                             <span id="resume-button-3">
                                 <a href="Kuldeep-Tiwari-Resume.pdf" target="_blank" id="resume-link-3"><button
@@ -170,16 +171,19 @@
                         <div class="skills-card"><img class="skills-card-img" src="img/api.png">
                             <h1 class="skills-card-name">API</h1>
                         </div>
-                        <div class="skills-card"><img class="skills-card-img" src="https://avatars.githubusercontent.com/u/44036562?s=280&v=4">
+                        <div class="skills-card"><img class="skills-card-img"
+                                src="https://avatars.githubusercontent.com/u/44036562?s=280&v=4">
                             <h1 class="skills-card-name">Git Actions</h1>
                         </div>
                         <div class="skills-card"><img class="skills-card-img" src="img/aws.png">
                             <h1 class="skills-card-name">AWS</h1>
                         </div>
-                        <div class="skills-card"><img class="skills-card-img" src="https://www.cyclic.sh/og/summary_large_image.png">
+                        <div class="skills-card"><img class="skills-card-img"
+                                src="https://www.cyclic.sh/og/summary_large_image.png">
                             <h1 class="skills-card-name">Cyclic</h1>
                         </div>
-                        <div class="skills-card"><img class="skills-card-img" src="https://img.uxwing.com/wp-content/themes/uxwing/download/brands-social-media/postman-icon.png">
+                        <div class="skills-card"><img class="skills-card-img"
+                                src="https://img.uxwing.com/wp-content/themes/uxwing/download/brands-social-media/postman-icon.png">
                             <h1 class="skills-card-name">Postman</h1>
                         </div>
 
@@ -193,6 +197,53 @@
                     <div id="project-box">
                         <div class="project-card">
                             <div class="image-div-project">
+                                <img src="./img/bookmyshoot.png" alt="">
+                            </div>
+                            <div class="text-div-project">
+                                <h1 class="project-title">Book my Shoot</h1>
+                                <h3 class="project-description"> A photographer booking system allows logged-in users to
+                                    book a shoot with their desired photographer.
+                                    Enthusiastic and professional photographers can apply to become photographers on our
+                                    website. It was a collaborative
+                                    project build in a span of 5 days.</h3>
+                                <h3 class="project-tech-stack" style="margin-top: 10px;">Teck Stack : HTML | CSS |
+                                    JavaScript | Node.js | Express | MongoDb | Redis | WebRtc </h3>
+                                <div class="pbtn">
+                                    <a class="project-github-link"
+                                        href="https://github.com/kuldeep55567/photographer-booking-system"
+                                        target="_blank"><button class="bt"><i class="fa-brands fa-github"></i>
+                                            GitHub</button></a>
+                                    <a class="project-deployed-link" href="https://bookmyshoot.netlify.app/"
+                                        target="_blank"><button class="bt"><i class="fa-solid fa-circle"></i> Live
+                                        </button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="image-div-project">
+                                <img src="img/meetEase.png" alt="">
+                            </div>
+                            <div class="text-div-project">
+                                <h1 class="project-title">MeetEase</h1>
+                                <h3 class="project-description">A real Time Online booking app with features likes
+                                    videocalling and meeting.
+                                    This project was made by 4 members in a span of 3 days.
+                                </h3>
+                                <h3 class="project-tech-stack" style="margin-top: 10px;">Teck Stack : HTML | CSS |
+                                    JavaScript | NodeJs | Express | WebRtc | MongoDb | Redis </h3>
+                                <div class="pbtn">
+                                    <a class="project-github-link"
+                                        href="https://github.com/kuldeep55567/busy-motion-6100" target="_blank"><button
+                                            class="bt"><i class="fa-brands fa-github"></i>
+                                            GitHub</button></a>
+                                    <a class="project-deployed-link" href="https://easemeet.onrender.com/"
+                                        target="_blank"><button class="bt"><i class="fa-solid fa-circle"></i> Live
+                                        </button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="image-div-project">
                                 <img src="./img/clark-main.png" alt="">
                             </div>
                             <div class="text-div-project">
@@ -204,9 +255,10 @@
                                 <h3 class="project-tech-stack" style="margin-top: 10px;">Teck Stack : HTML | CSS |
                                     JavaScript | Node.js | Express | MongoDb </h3>
                                 <div class="pbtn">
-                                   <a class="project-github-link"
-                                    href="https://github.com/kuldeep55567/satisfying-bee-4021" target="_blank"><button
-                                        class="bt"><i class="fa-brands fa-github"></i> GitHub</button></a>
+                                    <a class="project-github-link"
+                                        href="https://github.com/kuldeep55567/satisfying-bee-4021"
+                                        target="_blank"><button class="bt"><i class="fa-brands fa-github"></i>
+                                            GitHub</button></a>
                                     <a class="project-deployed-link"
                                         href="https://frolicking-axolotl-b0d1a6.netlify.app" target="_blank"><button
                                             class="bt"><i class="fa-solid fa-circle"></i> Live
@@ -239,56 +291,7 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="project-card">
-                            <div class="image-div-project">
-                                <img src="img/bigBasket.png" alt="">
-                            </div>
-                            <div class="text-div-project">
-                                <h1 class="project-title">Big Basket </h1>
-                                <h3 class="project-description">Big Basket is a online Grocery and Household selling
-                                    platform with millions of user.
-                                    This porject was made in a span of 4 days individually.
-                                </h3>
-                                <h3 class="project-tech-stack" style="margin-top: 10px;">Teck Stack : HTML | CSS |
-                                    JavaScript
-                                </h3>
-                                <div class="pbtn">
-                                    <a class="project-github-link" href="https://github.com/kuldeep55567/cut-oven-5189"
-                                        target="_blank"><button class="bt"><i class="fa-brands fa-github"></i>
-                                            GitHub</button></a>
-                                    <a class="project-deployed-link" href="https://meek-maamoul-4bf3bd.netlify.app/"
-                                        target="_blank"><button class="bt"><i class="fa-solid fa-circle"></i>
-                                            Live</button></a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="project-card">
-                            <div class="image-div-project">
-                                <img src="img/meetEase.png" alt="">
-                            </div>
-                            <div class="text-div-project">
-                                <h1 class="project-title">MeetEase</h1>
-                                <h3 class="project-description">A real Time Online booking app with features likes
-                                    videocalling and meeting.
-                                    This project was made by 4 members in a span of 3 days.
-                                </h3>
-                                <h3 class="project-tech-stack" style="margin-top: 10px;">Teck Stack : HTML | CSS |
-                                    JavaScript | NodeJs | Express | WebRtc | MongoDb |
-                                    Express | MongoDb | Redis </h3>
-                                <div class="pbtn">
-                                    <a class="project-github-link"
-                                        href="https://github.com/kuldeep55567/busy-motion-6100" target="_blank"><button
-                                            class="bt"><i class="fa-brands fa-github"></i>
-                                            GitHub</button></a>
-                                    <a class="project-deployed-link" href="https://meek-maamoul-4bf3bd.netlify.app/"
-                                        target="_blank"><button class="bt"><i class="fa-solid fa-circle"></i> Live
-                                        </button></a>
-                                </div>
-                            </div>
-                        </div>
+                  
                     </div>
                 </section>
                 <!--........... END projects SECTION.............. -->
@@ -334,7 +337,9 @@
                             Backend or
                             Frontend</p>
                         <div id="a" class="info">
-                            <h3 id="contact-email"> <i class="fas fa-envelope"></i> kuldeept5567@gmail.com</h3>
+                            <a href="mailto:kuldeept5567@gmail.com" target="_blank"> <i class="fas fa-envelope"></i>
+                                Send Email</a>
+                            <br>
                             <a href="https://www.linkedin.com/in/kuldeep-tiwari-a3637923a/" target="_blank"><i
                                     class="fa-brands fa-linkedin"></i>
                                 Linkedin</a>
@@ -348,15 +353,16 @@
                     </div>
                     <div id="right">
                         <h4>Message me</h4>
-                        <form   action="https://formspree.io/f/moqzbabw"
-                        method="POST" class="contact-form">
+                        <form action="https://formspree.io/f/moqzbabw" method="POST" class="contact-form">
                             <div id="flexed">
                                 <input type="text" placeholder="Name" name="UserName" autocomplete="off" required>
-                                <input type="email" placeholder="Email" name="Email"  autocomplete="off" required>
+                                <input type="email" placeholder="Email" name="Email" autocomplete="off" required>
                             </div>
-                            <input type="text" placeholder="Subject" id="subject" name="Subject" autocomplete="off" required>
+                            <input type="text" placeholder="Subject" id="subject" name="Subject" autocomplete="off"
+                                required>
                             <br>
-                            <input type="text" id="message-area" placeholder="Message..." name="Message" autocomplete="off" required>
+                            <input type="text" id="message-area" placeholder="Message..." name="Message"
+                                autocomplete="off" required>
                             <br>
                             <button type="submit">Send Message</button>
                         </form>
@@ -382,6 +388,10 @@
     <!-- ..........CUSTOM JS LINK.......... -->
     <script src="./Script.js"></script>
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
