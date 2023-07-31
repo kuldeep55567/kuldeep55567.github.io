@@ -446,6 +446,12 @@
   .ImageModalsBox > img {
     width: 95%;
   }
+  .ImageModalsBox{
+    width: 40% !important;
+    text-align: center;
+    margin-left: 80px;
+
+  }
   .AllProjects{
     margin-top: 200px !important;
   }
@@ -464,6 +470,9 @@
   }
   .portfolioimage{
     width: 50%;
+  }
+  #home{
+    top: 80px;
   }
   .portfolio-content p,
   .portfolio-content a {
