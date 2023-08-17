@@ -25,7 +25,7 @@ function getTime() {
     return time;
 }
 async function getBotResponse(userText) {
-    const apiUrl = "https://drab-erin-squirrel-wrap.cyclic.cloud";
+    const apiUrl = "https://portfolio-342x.onrender.com";
     try {
       const response = await fetch(`${apiUrl}/answer`, {
         method: "POST",
